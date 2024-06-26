@@ -1,0 +1,11 @@
+Have an album with all of the projects
+Get to the point that if they click a specific link they can go to the project itself
+maybe put some graphs with the data of the efficiency of some of the programs
+If the user stays more than 2 minutes (or some other time) get a pop up that allows me to collect 
+some feedback from the user and sends that to another "server"
+There can maybe be like a login tgat asks the user to input a friendly name (anonymous) and then the 
+progrsam calls the user by that name
+
+
+JAVASCRIPT:
+FOr the navbar to have some sort of background as soon as we start scrolling down a specific distance

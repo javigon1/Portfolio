@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-size: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.col {
+    margin-bottom: 20px;
+}
+
+.logo {
+    background-color: aliceblue;
+    color: black;
+    padding: 15px;
+    border-radius: 10%;
+    height: 100px;
+    width: 100px;
+}
