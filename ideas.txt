@@ -9,3 +9,7 @@ progrsam calls the user by that name
 
 JAVASCRIPT:
 FOr the navbar to have some sort of background as soon as we start scrolling down a specific distance
+
+conforme se haga mas grabde/pequena la pnatalla cambiar lo que phrase dice
+
+cambiarlo pata que la pantalla a un tamaño especifico  - column todo
