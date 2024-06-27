@@ -11,6 +11,7 @@
     body, html {
       height: 100%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      min-width: 510px;
     }
 
     .wrapper {
@@ -128,6 +129,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 4;
     }
 
     .home-button {
@@ -192,6 +194,19 @@
     .other-contact {
       text-align: left;
     }
+
+    @media (max-width: 520px) {
+      .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project-box {
+        width: 85%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -200,7 +215,7 @@
       <header id="navbar" class="mb-auto nav-bar">
         <nav class="nav nav-masthead justify-content-center">
           <a style="border-radius: 14px; border-color: #5d6c57; color: #5d6c57; background-color: transparent; width: 80px; border-width: 1.5px; border-style: solid;" class="nav-link py-1 px-0 active me-3" href="./main.html">Home</a>
-          <a style="color: #5d6c57;" class="nav-link py-1 px-0 active me-3" href="./projects.html">Projects</a>
+          <a style="color: #5d6c57;" class="nav-link py-1 px-0 active me-3" href="#proj1" id="projects-link">Projects</a>
           <a style="color: #5d6c57;" class="nav-link py-1 px-0 active me-3" href="./about-me.html">About me</a>
           <a style="color: #5d6c57;" class="nav-link py-1 px-0 me-3" href="mailto:javier.gonzalez_paterna@tufts.edu" id="contact-link">Contact</a>
         </nav>
@@ -215,53 +230,53 @@
     
     <div class="wrapper">
       <div class="grid">
-        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-95 my-5 proj-1 wrapper" style="background-color: #92ad88;">
+        <a id="proj1" href="./image-com.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-95 proj-1 wrapper" style="background-color: #92ad88;">
           <div class="p-lg-5 mx-auto my-5 wra">
-            <h1 class="display-3 fw-bold">Proj1</h1>
+            <h1 class="display-3 fw-bold">Image Compressor/Decompressor</h1>
+            <h3 class="fw-normal text-muted mb-3">Compress and restore images to save memory usage</h3>
+          </div>
+        </a>
+
+        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 proj-2 wrapper">
+          <div class="p-lg-5 mx-auto my-5">
+            <h1 class="display-3 fw-bold">Word Search Engine</h1>
             <h3 class="fw-normal text-muted mb-3">Find word appearances in every file within a folder</h3>
           </div>
         </a>
 
-        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 my-5 proj-2 wrapper">
+        <a href="./um.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40  proj-3 wrapper">
           <div class="p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold">Proj2</h1>
+            <h1 class="display-3 fw-bold">UM</h1>
+            <h3 class="fw-normal text-muted mb-3">Universal Machine that replicates the xxxx</h3>
+          </div>
+        </a>
+
+        <a href="./image-editor.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 proj-4 wrapper">
+          <div class="p-lg-5 mx-auto my-5">
+            <h1 class="display-3 fw-bold">Image Editor</h1>
             <h3 class="fw-normal text-muted mb-3">Find word appearances in every file within a folder</h3>
           </div>
         </a>
 
-        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 my-5 proj-3 wrapper">
+        <p class="wrapper phrase mt-4 text-center">Can't go any smaller</p>
+
+        <a href="./text-com.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 proj-5 wrapper">
           <div class="p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold">Proj3</h1>
+            <h1 class="display-3 fw-bold">Text Compressor</h1>
+            <h3 class="fw-normal text-muted mb-3">Compress filesr</h3>
+          </div>
+        </a>
+
+        <a href="./black-spot.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 proj-6 wrapper">
+          <div class="p-lg-5 mx-auto my-5">
+            <h1 class="display-3 fw-bold">Blackspot Remover</h1>
             <h3 class="fw-normal text-muted mb-3">Find word appearances in every file within a folder</h3>
           </div>
         </a>
 
-        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 my-5 proj-4 wrapper">
+        <a href="./rpn.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 proj-7 wrapper">
           <div class="p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold">Proj4</h1>
-            <h3 class="fw-normal text-muted mb-3">Find word appearances in every file within a folder</h3>
-          </div>
-        </a>
-
-        <p class="wrapper phrase">HERE INPUT SOME TEXT</p>
-
-        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 my-5 proj-5 wrapper">
-          <div class="p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold">Proj5</h1>
-            <h3 class="fw-normal text-muted mb-3">Find word appearances in every file within a folder</h3>
-          </div>
-        </a>
-
-        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 my-5 proj-6 wrapper">
-          <div class="p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold">Proj6</h1>
-            <h3 class="fw-normal text-muted mb-3">Find word appearances in every file within a folder</h3>
-          </div>
-        </a>
-
-        <a href="./word-search.html" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-body-tertiary project-box btn my-2 back-to-home w-40 my-5 proj-7 wrapper">
-          <div class="p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold">Proj7</h1>
+            <h1 class="display-3 fw-bold">RPNC</h1>
             <h3 class="fw-normal text-muted mb-3">Find word appearances in every file within a folder</h3>
           </div>
         </a>
@@ -287,6 +302,27 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function updatePhrase() {
+        const phrase = document.querySelector('.phrase');
+        const width = window.innerWidth;
+
+        if (window.innerWidth < 521) {
+          phrase.textContent = "Can't go any smaller";
+        } else if (window.innerWidth < 768) {
+          phrase.textContent = "Medium Size";
+        } else if (window.innerWidth < 1200) {
+          phrase.textContent = "Large Size";
+        } else {
+          phrase.textContent = "Full Size";
+        }
+      }
+  
+      window.addEventListener('resize', updatePhrase);
+      document.addEventListener('DOMContentLoaded', updatePhrase);
+    </script>
+
   </div>
 </body>
 </html>
